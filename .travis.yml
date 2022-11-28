@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-  - docker run arsindelve/docker-react npm run test -- --coverage
+  - docker run -e CI=true arsindelve/docker-react npm run test
